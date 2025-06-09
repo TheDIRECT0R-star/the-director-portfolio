@@ -17,10 +17,15 @@
   <!-- Header -->
   <header class="w-full px-6 py-4 border-b border-zinc-800">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-semibold">The Director</h1>
+      <div class="flex items-center space-x-3">
+        <img src="images/logo.png" alt="The Director Logo" class="w-8 h-8 rounded">
+        <h1 class="text-2xl font-semibold">The Director</h1>
+      </div>
       <nav class="space-x-6 text-sm text-zinc-400">
         <a href="#about" class="hover:text-white">About</a>
         <a href="#projects" class="hover:text-white">Projects</a>
+        <a href="#books" class="hover:text-white">Books</a>
+        <a href="#work" class="hover:text-white">Work</a>
         <a href="#contact" class="hover:text-white">Contact</a>
       </nav>
     </div>
@@ -29,7 +34,11 @@
   <!-- Hero Section -->
   <section class="min-h-[80vh] flex items-center justify-center text-center px-4">
     <div>
-      <h2 class="text-5xl md:text-6xl font-bold mb-6">Purpose. Power. Presence.</h2>
+      <div class="mb-8">
+        <img src="images/profile.png" alt="Aymane Laksimi - The Director" class="w-40 h-40 rounded-full mx-auto mb-6 border-3 border-white shadow-2xl object-cover object-center">
+        <h2 class="text-5xl md:text-6xl font-bold mb-2">Purpose. Power. Presence.</h2>
+        <p class="text-xl text-zinc-300 mb-4">Aymane Laksimi</p>
+      </div>
       <p class="text-lg md:text-xl text-zinc-400 max-w-xl mx-auto">
         Explore my world of creation, code, clarity, and vision. Built with intention — guided by impact.
       </p>
@@ -38,10 +47,18 @@
 <!-- About Section -->
 <section id="about" class="py-20 border-t border-zinc-800 px-6 bg-[#0f0f0f]">
   <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-    <p class="text-zinc-400 text-lg leading-relaxed">
-      I’m The Director — a purpose-driven creator who blends technology with vision. Whether I’m writing clean code, launching tools that protect your focus, or building new digital experiences, everything I do is about clarity, intention, and impact.
-    </p>
+    <h2 class="text-3xl font-semibold mb-6">About Me</h2>
+    <div class="text-lg leading-relaxed space-y-4">
+      <p class="text-zinc-400">
+        I'm <span class="text-white font-medium">Aymane Laksimi</span> — known as <span class="text-white font-medium">The Director</span>. A 19-year-old philosopher-programmer from Morocco who bridges the gap between technology and human potential.
+      </p>
+      <p class="text-zinc-400">
+        I don't just write code — I write about <span class="text-white font-medium">life transformation</span>. Whether I'm building AI tools for focus, teaching programming with the right mindset, or exploring the depths of human consciousness through my books, everything I create serves one purpose: <span class="text-white font-medium">helping people live the life they deserve</span>.
+      </p>
+      <p class="text-zinc-400">
+        From <em>"The Science of Reprogramming Your Mind"</em> to <em>"Command Over Chaos"</em>, my work combines ancient wisdom with modern technology. Born in 2005, I represent a new generation that refuses to separate technical mastery from personal growth.
+      </p>
+    </div>
   </div>
 </section>
 
@@ -52,21 +69,275 @@
     
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Project Card 1 -->
-      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg border border-zinc-800">
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 bg-zinc-900 rounded-lg mb-4 flex items-center justify-center border border-zinc-700">
+          <div class="text-center">
+            <div class="text-green-400 font-mono text-lg mb-2">$ calculator</div>
+            <div class="text-zinc-400 text-sm">C Programming Project</div>
+          </div>
+        </div>
         <h3 class="text-xl font-bold mb-2">Terminal Calculator</h3>
-        <p class="text-zinc-400 mb-4">A simple C-based calculator that runs in the terminal. Built with ft_atoi, modular functions, and a clean CLI output.</p>
-        <a href="https://github.com/YOUR_USERNAME/terminal_calculator" target="_blank" class="text-sm text-zinc-300 hover:text-white underline">View on GitHub</a>
+        <p class="text-zinc-400 mb-4 text-sm">A robust C-based calculator with advanced parsing, error handling, and modular architecture. Features ft_atoi implementation and clean CLI interface.</p>
+        <div class="flex gap-2 mb-4">
+          <span class="bg-blue-600 text-white px-2 py-1 rounded text-xs">C</span>
+          <span class="bg-gray-600 text-white px-2 py-1 rounded text-xs">CLI</span>
+        </div>
+        <a href="https://github.com/TheDIRECT0R-star" target="_blank" class="text-sm text-zinc-300 hover:text-white underline">View on GitHub</a>
       </div>
 
-      <!-- Project Card 2 (Placeholder for now) -->
-      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg border border-zinc-800">
+      <!-- Project Card 2 -->
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 bg-gradient-to-br from-purple-900 to-blue-900 rounded-lg mb-4 flex items-center justify-center border border-zinc-700">
+          <div class="text-center">
+            <div class="text-4xl mb-2">🛡️</div>
+            <div class="text-white font-semibold">AI Content Filter</div>
+            <div class="text-purple-300 text-sm">Browser Extension</div>
+          </div>
+        </div>
         <h3 class="text-xl font-bold mb-2">UNSEE – Dopamine Shield</h3>
-        <p class="text-zinc-400 mb-4">An AI-powered tool (in progress) to block and blur suggestive online content — built to help users reclaim focus and dopamine discipline.</p>
-        <a href="#" class="text-sm text-zinc-300 hover:text-white underline">Coming Soon</a>
+        <p class="text-zinc-400 mb-4 text-sm">AI-powered browser extension that intelligently detects and blocks suggestive content to help maintain focus and mental clarity. Built with modern web technologies.</p>
+        <div class="flex gap-2 mb-4">
+          <span class="bg-yellow-600 text-black px-2 py-1 rounded text-xs">JavaScript</span>
+          <span class="bg-purple-600 text-white px-2 py-1 rounded text-xs">AI/ML</span>
+          <span class="bg-green-600 text-white px-2 py-1 rounded text-xs">Extension</span>
+        </div>
+        <span class="text-sm text-yellow-400 font-medium">🚧 In Development</span>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Work/Products Section -->
+<section id="work" class="py-20 border-t border-zinc-800 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-4">Books, Tools & Transformation</h2>
+    <p class="text-zinc-400 text-center mb-12 max-w-2xl mx-auto">
+      Explore my books on self-development, programming philosophy, and life mastery. Each creation bridges the gap between technical skills and human potential.
+    </p>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Product Card 1 -->
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/projects/unseeproject.png" alt="UNSEE - Dopamine Shield" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="text-xl font-bold mb-2">UNSEE - Dopamine Shield</h3>
+        <p class="text-zinc-400 mb-4 text-sm">AI-powered browser extension that blocks suggestive content to help you maintain focus and discipline.</p>
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-2xl font-bold text-white">$9.99</span>
+          <span class="bg-yellow-600 text-black px-2 py-1 rounded text-xs font-medium">COMING SOON</span>
+        </div>
+        <button class="w-full bg-zinc-700 text-zinc-400 px-4 py-2 rounded-lg font-medium cursor-not-allowed" disabled>
+          Pre-order Soon
+        </button>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/projects/lifemasteryebooksimage.png" alt="Life Mastery Ebooks Collection" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="text-xl font-bold mb-2">Life Mastery Ebooks</h3>
+        <p class="text-zinc-400 mb-4 text-sm">Deep books on mind reprogramming, dopamine control, and living with purpose. Programming with philosophy.</p>
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-2xl font-bold text-white">$5-15</span>
+          <span class="bg-green-600 text-white px-2 py-1 rounded text-xs font-medium">7+ BOOKS</span>
+        </div>
+        <div class="space-y-2">
+          <a href="https://payhip.com/TheDirector" target="_blank" class="block w-full bg-white text-black px-4 py-2 rounded-lg font-medium hover:bg-zinc-200 transition-colors text-center">
+            Browse All Books
+          </a>
+          <button onclick="showBookPreview()" class="w-full bg-amber-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-amber-700 transition-colors">
+            Preview Books
+          </button>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="bg-[#1a1a1a] rounded-2xl p-6 shadow-lg border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/projects/customdev.png" alt="Custom Development Services" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="text-xl font-bold mb-2">Custom Development</h3>
+        <p class="text-zinc-400 mb-4 text-sm">Need a custom website, app, or tool? Let's build something amazing together.</p>
+        <div class="flex justify-between items-center mb-4">
+          <span class="text-lg font-bold text-white">Contact for Price</span>
+          <span class="bg-purple-600 text-white px-2 py-1 rounded text-xs font-medium">CUSTOM</span>
+        </div>
+        <a href="#contact" class="block w-full bg-purple-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-purple-700 transition-colors text-center">
+          Get Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Books Preview Section -->
+<section id="books" class="py-20 border-t border-zinc-800 px-6">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-semibold text-center mb-4">My Published Works</h2>
+    <p class="text-zinc-400 text-center mb-12 max-w-3xl mx-auto">
+      Books that challenge conventional thinking and bridge the gap between technology and human consciousness. Each work is designed to transform how you see yourself and your potential.
+    </p>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Book 1 -->
+      <div class="bg-[#1a1a1a] rounded-xl p-6 border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/books/mind-reprogramming.png" alt="The Science of Reprogramming Your Mind" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="font-bold text-lg mb-2">The Science of Reprogramming Your Mind</h3>
+        <p class="text-zinc-400 text-sm mb-3">Deep dive into neuroplasticity and conscious transformation. Rewire your thinking patterns for success.</p>
+        <div class="text-amber-400 font-semibold">Philosophy • Psychology</div>
+      </div>
+      
+      <!-- Book 2 -->
+      <div class="bg-[#1a1a1a] rounded-xl p-6 border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/books/Dopamine Control(1).png" alt="Dopamine Control" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="font-bold text-lg mb-2">Dopamine Control</h3>
+        <p class="text-zinc-400 text-sm mb-3">Master your focus and discipline in the digital age. Reclaim your attention from endless distractions.</p>
+        <div class="text-red-400 font-semibold">Self-Control • Focus</div>
+      </div>
+      
+      <!-- Book 3 -->
+      <div class="bg-[#1a1a1a] rounded-xl p-6 border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/books/Commanding Chaos with Precision.png" alt="Command Over Chaos" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="font-bold text-lg mb-2">Command Over Chaos</h3>
+        <p class="text-zinc-400 text-sm mb-3">Mastering the shell to master yourself. Programming philosophy meets life mastery.</p>
+        <div class="text-green-400 font-semibold">Programming • Philosophy</div>
+      </div>
+      
+      <!-- Book 4 -->
+      <div class="bg-[#1a1a1a] rounded-xl p-6 border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/books/ultimate-unknown.png" alt="No Body Knows The Ultimate Unknown" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="font-bold text-lg mb-2">No Body Knows The Ultimate Unknown</h3>
+        <p class="text-zinc-400 text-sm mb-3">A philosophical exploration of consciousness, reality, and the mysteries of existence.</p>
+        <div class="text-blue-400 font-semibold">Philosophy • Consciousness</div>
+      </div>
+      
+      <!-- Book 5 -->
+      <div class="bg-[#1a1a1a] rounded-xl p-6 border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/books/struggles-by-me.png" alt="Struggles By Me" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="font-bold text-lg mb-2">Struggles By Me</h3>
+        <p class="text-zinc-400 text-sm mb-3">Personal journey through challenges and growth. Raw insights from real experiences.</p>
+        <div class="text-orange-400 font-semibold">Personal Growth • Memoir</div>
+      </div>
+      
+      <!-- Book 6 -->
+      <div class="bg-[#1a1a1a] rounded-xl p-6 border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/books/c-programming-mindset.png" alt="5 Mindset Shifts for C Programming" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="font-bold text-lg mb-2">5 Mindset Shifts for C Programming</h3>
+        <p class="text-zinc-400 text-sm mb-3">Programming with purpose. How to approach C programming with the right mental framework.</p>
+        <div class="text-gray-400 font-semibold">Programming • Mindset</div>
+      </div>
+      
+      <!-- Book 7 - C Mastery -->
+      <div class="bg-[#1a1a1a] rounded-xl p-6 border border-zinc-800 hover:border-zinc-600 transition-all">
+        <div class="w-full h-48 rounded-lg mb-4 overflow-hidden">
+          <img src="images/books/c-mastery.png" alt="C Mastery" class="w-full h-full object-cover rounded-lg">
+        </div>
+        <h3 class="font-bold text-lg mb-2">C Mastery</h3>
+        <p class="text-zinc-400 text-sm mb-3">Complete guide to mastering the C programming language with practical examples and advanced techniques.</p>
+        <div class="text-blue-400 font-semibold">Programming • Technical</div>
+      </div>
+    </div>
+    
+    <div class="text-center mt-12">
+      <a href="https://payhip.com/TheDirector" target="_blank" class="bg-white text-black px-8 py-4 rounded-lg font-semibold hover:bg-zinc-200 transition-colors inline-block">
+        Explore All Books →
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 border-t border-zinc-800 px-6 bg-[#0f0f0f]">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-semibold mb-8">Connect With Me</h2>
+    <p class="text-zinc-400 text-lg mb-8 leading-relaxed">
+      Ready to collaborate on something meaningful? Whether it's a project, an idea, or just a conversation about technology and purpose — let's connect.
+    </p>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
+      <a href="https://github.com/TheDIRECT0R-star" target="_blank" class="bg-[#1a1a1a] border border-zinc-700 text-white px-4 py-3 rounded-lg font-medium hover:border-zinc-500 transition-colors text-center">
+        GitHub
+      </a>
+      <a href="https://www.instagram.com/the_directo_r/" target="_blank" class="bg-[#1a1a1a] border border-zinc-700 text-white px-4 py-3 rounded-lg font-medium hover:border-zinc-500 transition-colors text-center">
+        Instagram
+      </a>
+      <a href="https://x.com/asiarlhorba" target="_blank" class="bg-[#1a1a1a] border border-zinc-700 text-white px-4 py-3 rounded-lg font-medium hover:border-zinc-500 transition-colors text-center">
+        X (Twitter)
+      </a>
+      <a href="https://www.tiktok.com/@the_directo_r" target="_blank" class="bg-[#1a1a1a] border border-zinc-700 text-white px-4 py-3 rounded-lg font-medium hover:border-zinc-500 transition-colors text-center">
+        TikTok
+      </a>
+      <a href="https://discord.gg/UGERzxk3g7" target="_blank" class="bg-[#1a1a1a] border border-zinc-700 text-white px-4 py-3 rounded-lg font-medium hover:border-zinc-500 transition-colors text-center">
+        Discord
+      </a>
+      <a href="https://payhip.com/TheDirector" target="_blank" class="bg-white text-black px-4 py-3 rounded-lg font-medium hover:bg-zinc-200 transition-colors text-center">
+        Shop
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-zinc-800 py-8 px-6 bg-[#0f0f0f]">
+  <div class="max-w-6xl mx-auto text-center text-zinc-500 text-sm">
+    <p>&copy; 2024 The Director. Built with purpose and intention.</p>
+  </div>
+</footer>
+
+<!-- PayPal Integration Script -->
+<script>
+  function payWithPayPal(product) {
+    // You'll need to replace this with your actual PayPal integration
+    // For now, this redirects to a contact form
+    const products = {
+      'course': {
+        name: 'Programming Courses',
+        price: '$15.00'
+      }
+    };
+    
+    const item = products[product];
+    if (item) {
+      // For now, redirect to contact - you can replace this with actual PayPal integration
+      alert(`Ready to purchase: ${item.name} for ${item.price}\n\nContact me via Discord or Instagram to complete the purchase!`);
+      window.location.href = '#contact';
+    }
+  }
+  
+  function showBookPreview() {
+    alert('📚 Available Books:\n\n• The Science of Reprogramming Your Mind\n• Dopamine Control (Focus Mastery)\n• Command Over Chaos (Programming Philosophy)\n• No Body Knows The Ultimate Unknown\n• Struggles By Me (Personal Growth)\n• 5 Mindset Shifts for C Programming\n• C Mastery\n\nVisit my Payhip store to explore all books!');
+    window.location.href = 'https://payhip.com/TheDirector';
+  }
+  
+  // Smooth scrolling for navigation links
+  document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
